@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcular Media</title>
+   
+</head>
+<body>
+    <script>
+  
+function calcularMedia(numeros = [10,10,10]){
+  
+    const config = (acumulador, valoratual) => acumulador + valoratual;//configurando para o reduce somar todos os bagulhos
+    const total = numeros.reduce(config, 0)//somando tudo começando do zero
+    const media = total / numeros.length;//dividio o todal  pelo tamanho  
+    alert(media);     
+    }
+
+    </script>
+    <button onclick="calcularMedia()">calcular Média</button>
+</body>
+</html>
